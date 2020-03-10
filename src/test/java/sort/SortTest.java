@@ -1,8 +1,6 @@
 package sort;
-
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,6 +29,15 @@ public class SortTest {
         String[] expected= {"Apple","Banana","Orange"};
         testString(expected, stringSort.sort(unsorted));
     }
+
+    @Test
+    public void testString1() {
+        String[] unsorted = {"aa","ab","ac","aa","aa"};
+        String[] expected= {"aa","aa","aa","ab","ac",};
+        testString(expected, stringSort.sort(unsorted));
+    }
+
+
 
 
     private void test(Integer[] array1, Integer[] array2) {

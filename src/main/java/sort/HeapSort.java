@@ -1,8 +1,8 @@
 package sort;
 
-public class InsertionSort<T extends Comparable<T>> implements Sort<T>{
+public class HeapSort<T> implements Sort<T> {
+    @Override
     public T[] sort(T[] array) {
         return null;
     }
-
 }

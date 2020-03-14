@@ -6,8 +6,8 @@ import java.util.List;
 
 public class SortTest {
 
-    Sort<Integer> intSort = new BubbleSort<>();
-    Sort<String> stringSort = new BubbleSort<>();
+    Sort<Integer> intSort = new SelectionSort<>();
+    Sort<String> stringSort = new SelectionSort<>();
 
     @Test
     public void testInt0() {

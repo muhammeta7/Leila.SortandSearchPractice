@@ -50,6 +50,15 @@ public class BinarySearchTest {
 
 
     @Test
+    public void testInt4_2() {
+        BinarySearch<Integer> bs = new BinarySearch<>();
+        Integer[] array = {2,3,3,5,6,6,6,7};
+        int wantToFind = 1;
+        Assert.assertEquals(-1, bs.search(wantToFind, array));
+    }
+
+
+    @Test
     public void testString0() {
         BinarySearch<String> bs = new BinarySearch<>();
         String[] array = {"apple","banana","coconut","dragon fruit"};

@@ -7,8 +7,25 @@ public class FindPrime {
     // - Return n primes, ascending, starting from 2
     // - Check if n is prime... etc
 
-    public int[] getPrime(int form, int to){
+    public int[] getPrime(int from, int to){
+        int[] primes = new int[to-from];
+
+
+
         return null;
+    }
+
+    public boolean isPrime(int n){
+        if(n <= 1){
+            return false;
+        }
+        for (int i = 2; i < n ; i++) {
+            if( n % i == 0){
+                return false;
+            }
+        }
+
+        return true;
     }
 
 }

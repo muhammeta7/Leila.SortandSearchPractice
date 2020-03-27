@@ -8,8 +8,6 @@ public class FindPrime {
     // - Check if n is prime... etc
 
     public int[] getPrime(int from, int to){
-        int[] primes = new int[to-from];
-
 
 
         return null;

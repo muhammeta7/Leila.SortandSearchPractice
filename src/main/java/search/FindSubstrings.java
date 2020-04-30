@@ -17,25 +17,11 @@ public class FindSubstrings {
 
     }
 
-    public static int countFrowns(String input){
-        int counter = 0;
-        input.split("");
-        while(input != null){
-            if(input.matches("")){
-                counter++;
-            }
-        }
-        System.out.println(input);
-        System.out.println(counter);
-        return counter;
-    }
-
     public static void main(String[] args) {
         String[] test = getAllSubstrings("Animal");
         for(String s : test){
             System.out.println(s);
         }
-        countFrowns("Someone I know :o) recently combined Maple Syrup :'D & buttered Popcorn 8~C thinking it would taste like caramel popcorn >;'@. It didn’t :-< and they don’t recommend anyone ;{ else do it either :o@ :o3");
     }
 
 
